@@ -59,7 +59,7 @@ addGlobalStyle(
 'div#comment-list>div.post>div.col2>div.header {color: #fff;}'+
 'div#comment-list>div.post>div.col2 {float: left;border: 1px solid #101010;padding: 10px;box-shadow: 3px 3px rgba(0,0,0,.2);background: #252525;}'+
 
-'div.status-notice {border: 2px solid #3a3a3a;background: #232323;box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);}'+
+'div.status-notice, div.status-notice.pending {border: 2px solid #3a3a3a;background: #232323;box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);}'+
 'div#paginator a {border:1px solid transparent;border-radius: 5px;}'+
 'div#paginator a:hover {background: #ff761c;color: #333;transition: all 0.5s ease-in;}'+
 
