@@ -37,6 +37,7 @@ addGlobalStyle(
     'li#add-to-favs {background-image: url(http://i.imgur.com/GRbb0mX.png);}'+
 
     '.avatar-large img {margin: 15px 6px 15px!important;}'+
+    '.avatar-medium img {margin: auto!important;}'+
 
     '.ranking-item {background-color: rgba(0,0,0,0.2)!Important;box-shadow: 3px 3px 1px rgba(0,0,0,.20);display: table-row-group;}'+
     '.ranking-item h2 {text-indent: 5px;}'+
