@@ -2,7 +2,7 @@
 // @name         Dark-chan.Sankaku
 // @namespace    http://tampermonkey.net/
 // @version      1.0.2.5
-// @description  try to take over the world!
+// @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
 // @author       You
 // @match        https://chan.sankakucomplex.com/*
 // @updateURL    https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
@@ -14,7 +14,7 @@
 var images = document.getElementsByTagName ("img")[0];
 images.setAttribute ( 'src', '//img.sankakucomplex.com/gfx/main/logo_tn.png'); //Changes Header Logo to Transparent Version from main Page
 
-var RemoveThumbs = document.getElementById("headerthumbs"); //Removes the ugly Thumbnails from Mainpage
+var RemoveThumbs = document.getElementById("headerthumbs"); //Removes the ugly header Thumbnails from Mainpage
 RemoveThumbs.removeChild(RemoveThumbs.childNodes[0]);
 
 
