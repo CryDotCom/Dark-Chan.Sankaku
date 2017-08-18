@@ -5,9 +5,9 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://chan.sankakucomplex.com/*
+// @updateURL    https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
+// @downloadURL  https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
 // @grant        none
-// @updateURL https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
-// @downloadURL https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
 // ==/UserScript==
 
 
