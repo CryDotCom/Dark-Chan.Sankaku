@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark-chan.Sankaku
 // @namespace    http://tampermonkey.net/
-// @version      1.0.3.0
+// @version      1.0.3.1
 // @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
 // @author       LoliStyle aka Onocom
 // @match        https://chan.sankakucomplex.com/*
@@ -54,14 +54,15 @@ addGlobalStyle(
 
     'textarea,input#artist_name, input#artist_alias_names, input#artist_member_names, input#query, input#name, input#url, input#pool_name_en,input#post_parent_id, input#post_source, textarea#post_tags, textarea#reply-text-6278266 {background-color: #5a5a5a!Important;color: #d9d9d9!Important;border-color: #1f1f1f!Important;border-width: 1px!Important;}'+
     'input#file, input#post_file {border-color: #131313;}'+
-    '#recommendations-paginator>span.recommended-next, #recommendations-paginator>span.recommended-prev, ul.subnav li, div#header ul#navbar li:hover ul li:hover {border:1px solid transparent;}'+
+    'ul.subnav li, div#header ul#navbar li:hover ul li:hover {border:1px solid transparent;}'+
     'div#post-view>div#right-col>div>div#note-container>div.note-body {color: black;}'+ //Translation note on img
     'div#comment-list>div.post>div.col2>div.header {color: #fff;}'+
     'div#comment-list>div.post>div.col2 {float: left;border: 1px solid #101010;padding: 10px;box-shadow: 3px 3px rgba(0,0,0,.2);background: #252525;}'+
 
     'div.status-notice, div.status-notice.pending {border: 2px solid #3a3a3a;background: #232323;box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);}'+
-    'div#paginator a {border:1px solid transparent;border-radius: 5px;}'+
-    'div#paginator a:hover {background: #ff761c;color: #333;transition: all 0.5s ease-in;}'+
+    'div#paginator a{border: 1px solid transparent;border-radius: 5px;}'+
+    'div#paginator a:hover, #recommendations-paginator>span.recommended-next a:hover, #recommendations-paginator>span.recommended-prev a:hover {border-radius: 5px; background: #ff761c;color: #333;transition: all 0.5s ease-in;}'+
+     '#recommendations-paginator>span.recommended-next, #recommendations-paginator>span.recommended-prev, #recommendations-paginator>span.recommended-next a, #recommendations-paginator>span.recommended-prev a {border: 1px solid transparent;border-radius: 5px;}'+
 
     'table {border: 2px solid #191919;}'+
     'table thead { background: #1d1d1d;}'+
