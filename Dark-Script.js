@@ -6,6 +6,8 @@
 // @author       You
 // @match        https://chan.sankakucomplex.com/*
 // @grant        none
+// @@updateURL https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
+// @downloadURL https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
 // ==/UserScript==
 
 
