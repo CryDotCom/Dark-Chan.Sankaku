@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Dark chan.Sankaku
+// @name         Dark-chan.Sankaku
 // @namespace    http://tampermonkey.net/
 // @version      1.0.2
 // @description  try to take over the world!
