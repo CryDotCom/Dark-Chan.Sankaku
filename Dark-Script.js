@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark-chan.Sankaku
-// @namespace    http://tampermonkey.net/
-// @version      1.0.3.2
+// @namespace    https://github.com/CryDotCom/Dark-Chan.Sankaku
+// @version      1.0.3.3
 // @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
 // @author       LoliStyle aka Onocom
 // @match        https://chan.sankakucomplex.com/*
@@ -56,6 +56,8 @@ addGlobalStyle(
     'div#header ul#navbar li { border: 1px solid transparent;border-radius: 4px;border-top-right-radius: 1em;border-bottom-right-radius: 2px;border-bottom-left-radius: 2px;}'+
     'div.sidebar {border-color: #191919!Important; background-color:rgba(0,0,0,0.2)!Important}'+
     'div#advanced_search {background: transparent!Important; border: 1px solid transparent!important;}'+
+
+    'div#post-content {padding-top: 32px;}'+
 
     'textarea,input#artist_name, input#artist_alias_names, input#artist_member_names, input#query, input#name, input#url, input#pool_name_en,input#post_parent_id, input#post_source, textarea#post_tags, textarea#reply-text-6278266 {background-color: #5a5a5a!Important;color: #d9d9d9!Important;border-color: #1f1f1f!Important;border-width: 1px!Important;}'+
     'input#file, input#post_file {border-color: #131313;}'+
