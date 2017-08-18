@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark-chan.Sankaku
 // @namespace    http://tampermonkey.net/
-// @version      1.0.3.1
+// @version      1.0.3.2
 // @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
 // @author       LoliStyle aka Onocom
 // @match        https://chan.sankakucomplex.com/*
@@ -32,12 +32,17 @@ addGlobalStyle(
 
     'img {position: inherit;margin-left: 38%;}'+
     '.unit-rating {background: url(http://i.imgur.com/nwPRGYh.png) left center repeat-x;}'+
-    '.unit-rating li{background: url(http://i.imgur.com/nwPRGYh.png) left top;}'+
+    '.unit-rating li {background: url(http://i.imgur.com/nwPRGYh.png) left top;}'+
     '.unit-rating li a:hover{background: url(http://i.imgur.com/nwPRGYh.png) left bottom}'+
     'li#add-to-favs {background-image: url(http://i.imgur.com/GRbb0mX.png);}'+
 
+    '.avatar-large img {margin: 15px 6px 15px!important;}'+
+
+    '.ranking-item {background-color: rgba(0,0,0,0.2)!Important;box-shadow: 3px 3px 1px rgba(0,0,0,.20);display: table-row-group;}'+
+    '.ranking-item h2 {text-indent: 5px;}'+
+
     'body, body.en, body.ja, div#header {background: rgb(45, 45, 45)!Important; color: rgb(200,200,200)!Important;}'+
-    '#popular-preview {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/crown_black.png) center 0.5em no-repeat; background-color: rgba(0,0,0,0.2)!Important;border-color: #191919!Important;box-shadow: 3px 3px 1px rgba(0,0,0,.20)}'+
+    '#popular-preview, .ranking-top-spot {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/crown_black.png) center 0.5em no-repeat; background-color: rgba(0,0,0,0.2)!Important;border: 1px solid #191919!Important;box-shadow: 3px 3px 1px rgba(0,0,0,.20)}'+
     '#tags { color: #e6e6e6!Important;}'+
 
     'input#tags { border: 2px solid #4a4a4a!Important; background: #FAFAFA!Important;background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#464646),color-stop(1,#000000))!Important;border-width: 1px!Important;border-style: solid!Important;border-color: #000!Important;}'+
