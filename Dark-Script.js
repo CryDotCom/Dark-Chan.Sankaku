@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Dark-chan.Sankaku
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2.5
+// @version      1.0.3.0
 // @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
-// @author       You
+// @author       LoliStyle aka Onocom
 // @match        https://chan.sankakucomplex.com/*
 // @updateURL    https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
 // @downloadURL  https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
