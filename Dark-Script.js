@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark-chan.Sankaku
 // @namespace    https://github.com/CryDotCom/Dark-Chan.Sankaku
-// @version      1.0.3.3
+// @version      1.0.3.4
 // @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
 // @author       LoliStyle aka Onocom
 // @match        https://chan.sankakucomplex.com/*
@@ -10,14 +10,15 @@
 // @grant        none
 // ==/UserScript==
 
-
+//Changes Header Logo to Transparent Version from main Page
 var images = document.getElementsByTagName ("img")[0];
-images.setAttribute ( 'src', '//img.sankakucomplex.com/gfx/main/logo_tn.png'); //Changes Header Logo to Transparent Version from main Page
+images.setAttribute ( 'src', '//img.sankakucomplex.com/gfx/main/logo_tn.png');
 
-var RemoveThumbs = document.getElementById("headerthumbs"); //Removes the ugly header Thumbnails from Mainpage
+//Removes the ugly header Thumbnails from Mainpage
+var RemoveThumbs = document.getElementById("headerthumbs"); 
 RemoveThumbs.removeChild(RemoveThumbs.childNodes[0]);
 
-
+//function for changing css Style on Page
 function addGlobalStyle(css) {
     var head, style;
     head = document.getElementsByTagName('head')[0];
@@ -49,6 +50,8 @@ addGlobalStyle(
     'input#tags { border: 2px solid #4a4a4a!Important; background: #FAFAFA!Important;background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#464646),color-stop(1,#000000))!Important;border-width: 1px!Important;border-style: solid!Important;border-color: #000!Important;}'+
     'select, #mode, input#i_rated, select#order_by, input#exc_tags, input#n_rated, input#up_by, input#fav_by, input#voted_by, input#sub_of,  select#h_is, input#h_is_this, select#w_is, input#w_is_this, select#mp_is, input#mp_is_this, select#fsize_is, input#fsize_is_this, select#d_is, input#d_is_this  { background-color: #383838!Important; color: #d9d9d9!Important;border-color: #131212!Important;border-width: 1px!Important;}'+
     'ul.flat-list {background-color: rgba(45,45,45)!Important;border-color: #b3b3b3!Important;}'+
+
+    'div#news-ticker {background: rgba(0, 0, 0, 0.22);border-bottom: 2px solid rgba(255, 255, 255, 0.15)}'+
 
     'div#header ul#navbar li.current-page{background-color: #3a3a3a;border-bottom: 2px solid #3a3a3a!important;;border: 1px solid #1d1d1d;}'+
     'div#header ul#navbar li:hover{background-color: #3a3a3a;border-bottom: 2px solid #3a3a3a!important;;border: 1px solid #1d1d1d;}'+
