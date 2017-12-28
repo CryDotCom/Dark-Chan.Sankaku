@@ -1,0 +1,5 @@
+Here are all changes starting from 1.0.3.4
+
+V. 1.0.3.5 : Fixed header logo (to the new one from mainpage)
+
+V. 1.0.3.4 : -
