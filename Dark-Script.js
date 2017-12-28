@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark-chan.Sankaku
 // @namespace    https://github.com/CryDotCom/Dark-Chan.Sankaku
-// @version      1.0.3.4
+// @version      1.0.3.5
 // @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
 // @author       LoliStyle aka Onocom
 // @match        https://chan.sankakucomplex.com/*
@@ -12,7 +12,7 @@
 
 //Changes Header Logo to Transparent Version from main Page
 var images = document.getElementsByTagName ("img")[0];
-images.setAttribute ( 'src', '//img.sankakucomplex.com/gfx/main/logo_tn.png');
+images.setAttribute ( 'src', '//www.sankakucomplex.com/wp-content/uploads/2017/12/logo-white-478x120.png');
 
 //Removes the ugly header Thumbnails from Mainpage
 var RemoveThumbs = document.getElementById("headerthumbs"); 
