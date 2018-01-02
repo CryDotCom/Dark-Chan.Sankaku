@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark-chan.Sankaku
 // @namespace    https://github.com/CryDotCom/Dark-Chan.Sankaku
-// @version      1.0.3.5
+// @version      1.0.4.0
 // @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
 // @author       LoliStyle aka Onocom
 // @match        https://chan.sankakucomplex.com/*
@@ -32,10 +32,10 @@ function addGlobalStyle(css) {
 addGlobalStyle(
 
     'img {position: inherit;margin-left: 38%;}'+
-    '.unit-rating {background: url(http://i.imgur.com/nwPRGYh.png) left center repeat-x;}'+
-    '.unit-rating li {background: url(http://i.imgur.com/nwPRGYh.png) left top;}'+
-    '.unit-rating li a:hover{background: url(http://i.imgur.com/nwPRGYh.png) left bottom}'+
-    'li#add-to-favs {background-image: url(http://i.imgur.com/GRbb0mX.png);}'+
+    '.unit-rating {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/star_rating_trans.png) left center repeat-x;}'+
+    '.unit-rating li {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/star_rating_trans.png) left top;}'+
+    '.unit-rating li a:hover{background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/star_rating_trans.png) left bottom}'+
+    'li#add-to-favs {background-image: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/heartbg-trans.png);}'+
 
     '.avatar-large img {margin: 15px 6px 15px!important;}'+
     '.avatar-medium img {margin: auto!important;}'+
