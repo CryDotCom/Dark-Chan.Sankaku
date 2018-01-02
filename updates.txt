@@ -1,5 +1,7 @@
 Here are all changes starting from 1.0.3.4
 
+v. 1.0.4.0 : uploaded all images to Github and added the new images to the script.
+
 V. 1.0.3.5 : Fixed header logo (to the new one from mainpage)
 
 V. 1.0.3.4 : -
