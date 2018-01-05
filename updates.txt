@@ -1,5 +1,14 @@
 Here are all changes starting from 1.0.3.4
 
+v. 1.0.5.0 : Added @run-at document-Start and modified script that it loads with it. 
+             Script now loads before the page is loaded, which removes the "Flashing" of the old white Background on load of page.
+             
+             Added the Header Thumb images/links into the CSS code for removal. 
+             they now won't flash/appear for a split second anymore aswell.
+             this removed the script function for doing this, now the script has to work less.
+            
+             ToDo: make logo load on before page finishes loading the old logo, so it does not flash anymore aswell.
+
 v. 1.0.4.0 : uploaded all images to Github and added the new images to the script.
 
 V. 1.0.3.5 : Fixed header logo (to the new one from mainpage)
