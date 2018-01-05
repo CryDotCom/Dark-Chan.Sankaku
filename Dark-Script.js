@@ -1,24 +1,20 @@
 // ==UserScript==
-// @name         Dark-chan.Sankaku
-// @namespace    https://github.com/CryDotCom/Dark-Chan.Sankaku
-// @version      1.0.4.0
-// @description  Changes the apearince of chan.sankakucomplex.com to a more dark version.
-// @author       LoliStyle aka Onocom
-// @match        https://chan.sankakucomplex.com/*
-// @updateURL    https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
-// @downloadURL  https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
-// @grant        none
+// @name        Dark-chan.Sankaku
+// @namespace   https://github.com/CryDotCom/Dark-Chan.Sankaku
+// @version     1.0.5.0
+// @description Changes the apearince of chan.sankakucomplex.com to a dark version.
+// @author      LoliStyle aka Onocom
+// @match       https://chan.sankakucomplex.com/*
+// @run-at      document-start
+// @grant       none
+// @updateURL   https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
+// @downloadURL https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/Dark-Script.js
 // ==/UserScript==
 
-//Changes Header Logo to Transparent Version from main Page
-var images = document.getElementsByTagName ("img")[0];
-images.setAttribute ( 'src', '//www.sankakucomplex.com/wp-content/uploads/2017/12/logo-white-478x120.png');
 
-//Removes the ugly header Thumbnails from Mainpage
-var RemoveThumbs = document.getElementById("headerthumbs"); 
-RemoveThumbs.removeChild(RemoveThumbs.childNodes[0]);
+(function() {
+    'use strict';
 
-//function for changing css Style on Page
 function addGlobalStyle(css) {
     var head, style;
     head = document.getElementsByTagName('head')[0];
@@ -28,8 +24,13 @@ function addGlobalStyle(css) {
     style.innerHTML = css;
     head.appendChild(style);
 }
+    addGlobalStyle(
 
-addGlobalStyle(
+
+
+    '#headerthumbs a {display: none!important;}'+  //removes the top page thumbs links text from main page
+    '#headerthumbs img {display: none!important;}'+ //removes the top page thumbs images from main page
+
 
     'img {position: inherit;margin-left: 38%;}'+
     '.unit-rating {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/star_rating_trans.png) left center repeat-x;}'+
@@ -44,7 +45,7 @@ addGlobalStyle(
     '.ranking-item h2 {text-indent: 5px;}'+
 
     'body, body.en, body.ja, div#header {background: rgb(45, 45, 45)!Important; color: rgb(200,200,200)!Important;}'+
-    '#popular-preview, .ranking-top-spot {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/crown_black.png) center 0.5em no-repeat; background-color: rgba(0,0,0,0.2)!Important;border: 1px solid #191919!Important;box-shadow: 3px 3px 1px rgba(0,0,0,.20)}'+
+    '#popular-preview, .ranking-top-spot {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/crown_black.png) center 0.5em no-repeat; background-color: rgba(0,0,0,0.2)!Important;border: 1px solid              #191919!Important;box-shadow: 3px 3px 1px rgba(0,0,0,.20)}'+
     '#tags { color: #e6e6e6!Important;}'+
 
     'input#tags { border: 2px solid #4a4a4a!Important; background: #FAFAFA!Important;background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#464646),color-stop(1,#000000))!Important;border-width: 1px!Important;border-style: solid!Important;border-color: #000!Important;}'+
@@ -98,3 +99,29 @@ addGlobalStyle(
     'table.highlightable th { color: #c8c8c8;}'
 
 );
+
+   })();
+// Change Logo to translogo from Main page
+var ready = function ( fn ) {
+
+    // Sanity check
+    if ( typeof fn !== 'function' ) return;
+
+    // If document is already loaded, run method
+    if ( document.readyState === 'complete'  ) {
+        return fn();
+    }
+
+    // Otherwise, wait until document is loaded
+    document.addEventListener( 'DOMContentLoaded', fn, false );
+
+};
+
+
+ready(function() {
+    document.getElementsByTagName('img')[0].src ='//www.sankakucomplex.com/wp-content/uploads/2017/12/logo-white-478x120.png';
+});
+
+
+
+
