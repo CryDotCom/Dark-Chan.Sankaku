@@ -1,5 +1,10 @@
 Here are all changes starting from 1.0.3.4
 
+v. 1.1.0.0 : Changes to Imagelogo part of the script:
+              Removed the big script for changing the Logo on pageload.
+              Added abit of css code to change the Url of the Logo Image.
+              Logo nolonger flashes its old version with white background.
+
 v. 1.0.5.0 : Added @run-at document-Start and modified script that it loads with it. 
              Script now loads before the page is loaded, which removes the "Flashing" of the old white Background on load of page.
              
@@ -7,7 +12,7 @@ v. 1.0.5.0 : Added @run-at document-Start and modified script that it loads with
              they now won't flash/appear for a split second anymore aswell.
              this removed the script function for doing this, now the script has to work less.
             
-             ToDo: make logo load on before page finishes loading the old logo, so it does not flash anymore aswell.
+             ToDo: make logo load before page finishes loading the old logo, so it does not flash anymore aswell.
 
 v. 1.0.4.0 : uploaded all images to Github and added the new images to the script.
 
