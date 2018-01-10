@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Dark-chan.Sankaku
 // @namespace   https://github.com/CryDotCom/Dark-Chan.Sankaku
-// @version     1.0.5.0
+// @version     1.1.0.0
 // @description Changes the apearince of chan.sankakucomplex.com to a dark version.
 // @author      LoliStyle aka Onocom
 // @match       https://chan.sankakucomplex.com/*
@@ -30,7 +30,7 @@ function addGlobalStyle(css) {
 
     '#headerthumbs a {display: none!important;}'+  //removes the top page thumbs links text from main page
     '#headerthumbs img {display: none!important;}'+ //removes the top page thumbs images from main page
-
+    '#headerlogo a img {content: url(//www.sankakucomplex.com/wp-content/uploads/2017/12/logo-white-478x120.png);}'+ //changes logo to transparent logo from front page
 
     'img {position: inherit;margin-left: 38%;}'+
     '.unit-rating {background: url(https://raw.githubusercontent.com/CryDotCom/Dark-Chan.Sankaku/master/star_rating_trans.png) left center repeat-x;}'+
@@ -101,27 +101,3 @@ function addGlobalStyle(css) {
 );
 
    })();
-// Change Logo to translogo from Main page
-var ready = function ( fn ) {
-
-    // Sanity check
-    if ( typeof fn !== 'function' ) return;
-
-    // If document is already loaded, run method
-    if ( document.readyState === 'complete'  ) {
-        return fn();
-    }
-
-    // Otherwise, wait until document is loaded
-    document.addEventListener( 'DOMContentLoaded', fn, false );
-
-};
-
-
-ready(function() {
-    document.getElementsByTagName('img')[0].src ='//www.sankakucomplex.com/wp-content/uploads/2017/12/logo-white-478x120.png';
-});
-
-
-
-
