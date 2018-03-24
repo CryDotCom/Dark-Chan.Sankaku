@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Dark-chan.Sankaku
 // @namespace   https://github.com/CryDotCom/Dark-Chan.Sankaku
-// @version     1.1.0.0
+// @version     1.1.0.1
 // @description Changes the apearince of chan.sankakucomplex.com to a dark version.
 // @author      LoliStyle aka Onocom
 // @match       https://chan.sankakucomplex.com/*
